@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/images/meditation-icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/benefits.css">
+    <title>Benefits</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #fada3e;
+        }
+
+        .container {
+            position: relative;
+            width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .container .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+        }
+
+        .container .card:nth-child(even) {
+            flex-direction: column-reverse;
+        }
+
+        .container .card .imgBx {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background: #000;
+        }
+
+        .container .card .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container .card .content {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .card .content div {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="/static/images/forest.jpg" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Controls Anxiety</h2>
+                    <p>Mindfulness meditation helps train your mind to focus on the present, making you less likely to ruminate on anxious thoughts that can fuel depression.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="/static/images/background-img.jpg" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Increases Attention</h2>
+                    <p>Mindful awareness comes naturally to us when we meditate, and we reach ‘flow’ state where our mind is in complete harmony with itself.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="/static/images/background.jpg" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Promotes emotional health and well-being</h2>
+                    <p>When we meditate, we get a clear picture of our mind and become aware of the thoughts that drive our emotions and actions at the moment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="/static/images/forest2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Reduces Stress</h2>
+                    <p>Brain studies of regular meditators revealed that they have lower cortisol level in their brains, which explains their resilience and insightful nature.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <form>
+        <input type="button" class="go-back" value="Go back" onclick="history.back()">
+    </form> -->
+</body>
+
+</html>

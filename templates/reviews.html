@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/images/meditation-icon.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="/static/css/review.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .testimonials {
+            margin: 50px auto;
+        }
+
+        .testimonials h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #ff9800;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .testimonials h1::after {
+            content: '';
+            background: #ff9800;
+            display: block;
+            height: 3px;
+            width: 170px;
+            margin: 20px auto 5px;
+        }
+
+        .testimonials .row {
+            margin-top: 30px;
+        }
+
+        .col-md-4 {
+            margin: 40px auto;
+        }
+
+        .profile {
+            padding: 70px 10px 10px;
+            background-color: #efefef;
+        }
+
+        .profile img {
+            top: -60px;
+            position: absolute;
+            left: calc(50% - 60px);
+            border: 10px solid white;
+        }
+
+        .user {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        .profile h3 {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #ff9800;
+        }
+
+        span {
+            font-size: 12px;
+            color: #333;
+        }
+
+        blockquote {
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        blockquote::before {
+            content: '\201C';
+            font-size: 50px;
+            position: relative;
+            color: #ff9800;
+            line-height: 20px;
+            bottom: -15px;
+            right: 5px;
+        }
+
+        blockquote::after {
+            content: '\201C';
+            font-size: 50px;
+            position: relative;
+            color: #ff9800;
+            line-height: 10px;
+            bottom: -15px;
+            left: 5px;
+        }
+
+        .profile:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="testimonials">
+        <div class="container">
+            <h1>Reviews</h1>
+            <p class="text-center">What our customers are saying</p>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            alt="man1" class="user">
+                        <blockquote>I really enjoyed this website. I like it very much! It really help me out
+                            meditating. It's beautiful and practical.</blockquote>
+                        <h3>Peter Johnson <span>New York</span></h3>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                            alt="woman" class="user">
+                        <blockquote>I love it! This is the perfect website for all the people who want to start meditating.</blockquote>
+                        <h3>Jessica Stewart <span>Las Vegas</span></h3>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                            alt="man2" class="user">
+                        <blockquote>As a man who meditated every day, I needed a website capable of offering all the tools I want to a perfect session of meditation. Meditate-me has everything a person will need to meditate.</blockquote>
+                        <h3>David Almeida <span>Seattle</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

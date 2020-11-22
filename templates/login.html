@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/images/meditation-icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <style>
+        body {
+            background-image: url(/static/images/forest2.jpg);
+            background-size: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        .login input[type="text"],
+        input[type="password"] {
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .user {
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 112px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+        <img src="/static/images/avatar.png" class="user" width="100" height="100" alt="Background Image">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <p>User</p>
+            <input autocomplete="off" autofocus name="username" placeholder="Enter your username" type="text">
+
+            <p>Password</p>
+            <input name="password" placeholder="Enter your password" type="password">
+
+
+            <input type="submit" name="" value="Login">
+
+            <a href="/register">Don't have an account yet?</a>
+        </form>
+    </div>
+
+</body>
+
+</html>
